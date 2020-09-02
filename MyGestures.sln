@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30323.103
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{736F85BA-B3A1-4311-AB97-388407865BA8}"
+	ProjectSection(SolutionItems) = preProject
+		..\IC.Client.Features.SlideServices\.editorconfig = ..\IC.Client.Features.SlideServices\.editorconfig
+		.gitignore = .gitignore
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
+		NuGet.Config = NuGet.Config
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsInput", "WindowsInput\WindowsInput.csproj", "{49C51A90-2E19-489C-B9CC-479DFA0190AE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NativeMultiFileArchiveLib", "NativeMultiFileArchiveLib\NativeMultiFileArchiveLib.csproj", "{BA7C1891-DD1A-4B94-A107-E520A0362A91}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WGestures.Common", "WGestures.Common\WGestures.Common.csproj", "{7253D8D6-A975-4650-9DD3-CCA01B9AE1D0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WGestures.Core", "WGestures.Core\WGestures.Core.csproj", "{D592656D-3D4E-42D2-B048-E2B7EC795CDF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WGestures.View", "WGestures.View\WGestures.View.csproj", "{132D2DA9-A8A0-498A-85EB-BD64935B727B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WGestures.App", "WGestures.App\WGestures.App.csproj", "{9D4B3B92-E5D4-47D1-B618-2BBBDB8088D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49C51A90-2E19-489C-B9CC-479DFA0190AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49C51A90-2E19-489C-B9CC-479DFA0190AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49C51A90-2E19-489C-B9CC-479DFA0190AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49C51A90-2E19-489C-B9CC-479DFA0190AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA7C1891-DD1A-4B94-A107-E520A0362A91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA7C1891-DD1A-4B94-A107-E520A0362A91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA7C1891-DD1A-4B94-A107-E520A0362A91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA7C1891-DD1A-4B94-A107-E520A0362A91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7253D8D6-A975-4650-9DD3-CCA01B9AE1D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7253D8D6-A975-4650-9DD3-CCA01B9AE1D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7253D8D6-A975-4650-9DD3-CCA01B9AE1D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7253D8D6-A975-4650-9DD3-CCA01B9AE1D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D592656D-3D4E-42D2-B048-E2B7EC795CDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D592656D-3D4E-42D2-B048-E2B7EC795CDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D592656D-3D4E-42D2-B048-E2B7EC795CDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D592656D-3D4E-42D2-B048-E2B7EC795CDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{132D2DA9-A8A0-498A-85EB-BD64935B727B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{132D2DA9-A8A0-498A-85EB-BD64935B727B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{132D2DA9-A8A0-498A-85EB-BD64935B727B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{132D2DA9-A8A0-498A-85EB-BD64935B727B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D4B3B92-E5D4-47D1-B618-2BBBDB8088D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D4B3B92-E5D4-47D1-B618-2BBBDB8088D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D4B3B92-E5D4-47D1-B618-2BBBDB8088D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D4B3B92-E5D4-47D1-B618-2BBBDB8088D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88532374-6FA9-4A68-A836-168BED547BD8}
+	EndGlobalSection
+EndGlobal

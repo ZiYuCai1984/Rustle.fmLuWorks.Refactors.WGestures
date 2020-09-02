@@ -1,0 +1,65 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+    <PropertyGroup>
+        <UseWindowsForms>true</UseWindowsForms>
+        <OutputType>WinExe</OutputType>
+
+        <!--TODO-fmLu AssemblyName-->
+        <AssemblyName>WGestures</AssemblyName>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="KeraLua" />
+        <PackageReference Include="Newtonsoft.Json" />
+        <PackageReference Include="NLua" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\NativeMultiFileArchiveLib\NativeMultiFileArchiveLib.csproj" />
+        <ProjectReference Include="..\WGestures.Common\WGestures.Common.csproj" />
+        <ProjectReference Include="..\WGestures.Core\WGestures.Core.csproj" />
+        <ProjectReference Include="..\WGestures.View\WGestures.View.csproj" />
+        <ProjectReference Include="..\WindowsInput\WindowsInput.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="defaults\config.plist" CopyToOutputDirectory="PreserveNewest"/>
+        <Content Include="defaults\gestures.wg2" CopyToOutputDirectory="PreserveNewest"/>
+    </ItemGroup>
+
+
+    <ItemGroup>
+        <EmbeddedResource Include="Resources\**\*.*" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="QuickStartGuide\**\*.*" CopyToOutputDirectory="PreserveNewest"/>
+    </ItemGroup>
+
+
+    <ItemGroup>
+        <Content Include="externalResource\**\*.*"/>
+    </ItemGroup>
+
+
+    <ItemGroup>
+        <!--TODO-fmLu Resolve COMReference(IWshRuntimeLibrary)-->
+        <COMReference Include="IWshRuntimeLibrary"/>
+        <!--TODO-fmLu Resolve COMReference(Shell32)-->
+        <COMReference Include="Shell32"/>
+    </ItemGroup>
+
+
+
+    <ItemGroup>
+        <Content Include="UpdateLog.txt" CopyToOutputDirectory="PreserveNewest"/>
+    </ItemGroup>
+
+
+
+
+
+
+
+
+</Project>

@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+	<PropertyGroup>
+		<UseWindowsForms>true</UseWindowsForms>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<ProjectReference Include="..\WindowsInput\WindowsInput.csproj" />
+	</ItemGroup>
+
+    <!--TODO-fmLu Resolve COMReference(IWshRuntimeLibrary)-->
+	<ItemGroup>
+		<COMReference Include="IWshRuntimeLibrary"/>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Newtonsoft.Json" />
+	</ItemGroup>
+
+</Project>

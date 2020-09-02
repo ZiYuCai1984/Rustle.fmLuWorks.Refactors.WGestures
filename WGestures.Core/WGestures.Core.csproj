@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <ItemGroup>
+        <PackageReference Include="KeraLua" />
+        <PackageReference Include="Newtonsoft.Json" />
+        <PackageReference Include="NLua" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\WGestures.Common\WGestures.Common.csproj" />
+        <ProjectReference Include="..\WindowsInput\WindowsInput.csproj" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+        <!--TODO-fmLu Resolve COMReference(SHDocVw)-->
+        <COMReference Include="SHDocVw"/>
+    </ItemGroup>
+
+</Project>

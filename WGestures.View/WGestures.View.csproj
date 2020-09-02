@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\WGestures.Common\WGestures.Common.csproj" />
+    <ProjectReference Include="..\WGestures.Core\WGestures.Core.csproj" />
+  </ItemGroup>
+
+
+</Project>
