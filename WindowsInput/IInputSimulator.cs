@@ -21,11 +21,11 @@ namespace WindowsInput
         IMouseSimulator Mouse { get; }
 
         /// <summary>
-        ///     Gets the <see cref="IInputDeviceStateAdaptor" /> instance for determining the state of the
+        ///     Gets the <see cref="IInputDeviceStateAdapter" /> instance for determining the state of the
         ///     various input devices.
         /// </summary>
-        /// <value>The <see cref="IInputDeviceStateAdaptor" /> instance.</value>
-        IInputDeviceStateAdaptor InputDeviceState { get; }
+        /// <value>The <see cref="IInputDeviceStateAdapter" /> instance.</value>
+        IInputDeviceStateAdapter InputDeviceState { get; }
 
         /// <summary>
         ///     ExtraInfo

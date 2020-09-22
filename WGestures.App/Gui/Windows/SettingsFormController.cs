@@ -400,7 +400,7 @@ namespace WGestures.App.Gui.Windows
                 }
 
                 _pathTracker.InitialStayTimeoutMillis = value;
-                this.Config.Set(ConfigKeys.PathTrackerInitialStayTimoutMillis, value);
+                this.Config.Set(ConfigKeys.PathTrackerInitialStayTimeoutMillis, value);
 
                 this.OnPropertyChanged("PathTrackerInitalStayTimeoutMillis");
             }
@@ -666,7 +666,7 @@ namespace WGestures.App.Gui.Windows
                 ConfigKeys.PathTrackerInitialStayTimeout,
                 this.PathTrackerInitialStayTimeout);
             this.PathTrackerInitalStayTimeoutMillis = this.Config.Get(
-                ConfigKeys.PathTrackerInitialStayTimoutMillis,
+                ConfigKeys.PathTrackerInitialStayTimeoutMillis,
                 this.PathTrackerInitalStayTimeoutMillis);
             this.PathTrackerPreferCursorWindow = this.Config.Get(
                 ConfigKeys.PathTrackerPreferCursorWindow,

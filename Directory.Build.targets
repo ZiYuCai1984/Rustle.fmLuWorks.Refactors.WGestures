@@ -1,9 +1,20 @@
 <Project>
 
+
+    <ItemGroup>
+        <!--TODO-fmLu Remove Newtonsoft.Json-->
+        <PackageReference Update="Newtonsoft.Json" Version="12.0.3" />
+    </ItemGroup>
+
     <ItemGroup>
         <PackageReference Update="KeraLua" Version="1.2.6" />
-        <PackageReference Update="Newtonsoft.Json" Version="12.0.3" />
         <PackageReference Update="NLua" Version="1.5.1" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+        <PackageReference Update="ReactiveUI" Version="11.5.35" />
+        <PackageReference Update="ReactiveUI.WPF" Version="11.5.35" />
     </ItemGroup>
 
 

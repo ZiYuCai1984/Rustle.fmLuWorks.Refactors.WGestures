@@ -1,4 +1,4 @@
-﻿namespace WGestures.App
+namespace WGestures.App
 {
     public static class ConfigKeys
     {
@@ -11,7 +11,7 @@
         public const string PathTrackerStayTimeoutMillis = "PathTrackerStayTimeoutMillis";
         public const string PathTrackerInitialStayTimeout = "PathTrackerInitialStayTimeout";
 
-        public const string PathTrackerInitialStayTimoutMillis =
+        public const string PathTrackerInitialStayTimeoutMillis =
             "PathTrackerInitialStayTimoutMillis";
 
         public const string PathTrackerPreferCursorWindow = "PathTrackerPreferCursorWindow";
@@ -29,7 +29,7 @@
 
 
         public const string IsFirstRun = "IsFirstRun";
-        public const string Is360EverDected = "Is360EverDected";
+
 
         public const string TrayIconVisible = "TrayIconVisible";
 

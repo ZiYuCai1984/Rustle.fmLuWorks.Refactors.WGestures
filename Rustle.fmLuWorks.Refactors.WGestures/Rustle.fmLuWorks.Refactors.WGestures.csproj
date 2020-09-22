@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <UseWpf>true</UseWpf>
+    </PropertyGroup>
+
+
+    <ItemGroup>
+        <PackageReference Include="ReactiveUI" />
+        <PackageReference Include="ReactiveUI.WPF" />
+    </ItemGroup>
+
+
+</Project>

@@ -43,6 +43,9 @@ namespace WGestures.App
         //for adding hotkey
         private static ToolStripMenuItem menuItem_pause;
 
+        //TODO-fmLu Temp
+        private static string PipeName { get; } = "Temp";
+
         [STAThread]
         private static void Main(string[] args)
         {
@@ -102,7 +105,7 @@ namespace WGestures.App
                 {
                     while (true)
                     {
-                        using (var server = new NamedPipeServerStream("WGestures_IPC_API"))
+                        using (var server = new NamedPipeServerStream(PipeName))
                         {
                             server.WaitForConnection();
 
@@ -149,7 +152,7 @@ namespace WGestures.App
                     () =>
                     {
 #if DEBUG
-                gestureParser.Start();
+                        gestureParser.Start();
 #else
                         try
                         {
@@ -306,27 +309,17 @@ namespace WGestures.App
 
         private static void ImportPrevousVersion()
         {
-            try
+            //导入先前版本
+            var prevConfigAndGestures = MigrateService.ImportPrevousVersion();
+            if (prevConfigAndGestures == null)
             {
-                //导入先前版本
-                var prevConfigAndGestures = MigrateService.ImportPrevousVersion();
-                if (prevConfigAndGestures == null)
-                {
-                    return;
-                }
-
-                intentStore.Import(prevConfigAndGestures.GestureIntentStore);
-                config.Import(prevConfigAndGestures.Config);
-
-                intentStore.Save();
+                return;
             }
-            catch (MigrateException e)
-            {
-                //ignore
-#if DEBUG
-                throw;
-#endif
-            }
+
+            intentStore.Import(prevConfigAndGestures.GestureIntentStore);
+            config.Import(prevConfigAndGestures.Config);
+
+            intentStore.Save();
         }
 
         private static void ConfigureComponents()
@@ -366,7 +359,7 @@ namespace WGestures.App
                 ConfigKeys.PathTrackerInitialStayTimeout,
                 true);
             pathTracker.InitialStayTimeoutMillis = config.Get(
-                ConfigKeys.PathTrackerInitialStayTimoutMillis,
+                ConfigKeys.PathTrackerInitialStayTimeoutMillis,
                 150);
             pathTracker.RequestPauseResume += paused => menuItem_pause_Click(null, EventArgs.Empty);
             pathTracker.EnableWindowsKeyGesturing = config.Get(
@@ -646,23 +639,14 @@ namespace WGestures.App
                 return;
             }
 
-            try
+            //可能被杀毒软件阻止
+            if (conf)
             {
-                //可能被杀毒软件阻止
-                if (conf)
-                {
-                    AutoStarter.Register(Constants.Identifier, Application.ExecutablePath);
-                }
-                else
-                {
-                    AutoStarter.Unregister(Constants.Identifier);
-                }
+                AutoStarter.Register(Constants.Identifier, Application.ExecutablePath);
             }
-            catch (Exception)
+            else
             {
-#if DEBUG
-                throw;
-#endif
+                AutoStarter.Unregister(Constants.Identifier);
             }
         }
 

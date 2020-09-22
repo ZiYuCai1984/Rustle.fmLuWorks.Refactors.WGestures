@@ -1,8 +1,8 @@
-﻿namespace WGestures.App
+namespace WGestures.App
 {
     internal static class Constants
     {
-        public const string Identifier = "com.yingdev.WGestures";
+        public const string Identifier = "Rustle.fmLuWorks.Refactors.WGestures";
         public const string CheckForUpdateUrlAppSettingKey = "CheckForUpdateUrl";
 
         public const string ProductHomePageAppSettingKey = "ProductHomePage";

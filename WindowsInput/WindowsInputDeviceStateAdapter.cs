@@ -3,11 +3,11 @@
 namespace WindowsInput
 {
     /// <summary>
-    ///     An implementation of <see cref="IInputDeviceStateAdaptor" /> for Windows by calling the native
+    ///     An implementation of <see cref="IInputDeviceStateAdapter" /> for Windows by calling the native
     ///     <see cref="NativeMethods.GetKeyState" /> and <see cref="NativeMethods.GetAsyncKeyState" />
     ///     methods.
     /// </summary>
-    public class WindowsInputDeviceStateAdaptor : IInputDeviceStateAdaptor
+    public class WindowsInputDeviceStateAdapter : IInputDeviceStateAdapter
     {
         /// <summary>
         ///     Determines whether the specified key is up or down by calling the GetKeyState function. (See:
